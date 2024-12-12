@@ -1,0 +1,87 @@
+body {
+  background-image: linear-gradient(135deg, #7c0f86, #fc009b, #7c0f86, #fc009b, #7c0f86, #fc009b, #7c0f86);
+  background-size: 500%;
+  animation: fanimado 40s infinite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  align-items: center;
+  margin-left: 200px;
+  width: 900px; /* ancho del carrusel */
+  height: 800px; /* alto del carrusel */
+background-color: #fff;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 700px;
+  height: 700px; /* alto de la imagen */
+  object-fit: cover; /* ajusta la imagen al tamaño del carrusel */
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+@keyframes animat {
+  0% {
+      transform: scale(0);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes fanimado{
+  0%{
+      background-image: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}

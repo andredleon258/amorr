@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+*{
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(135deg,#00e7d4, #505488, #ef3f80, #161569, #ef3f80, #505488, #00E7D4 );
+    background-size: 500%;
+    animation: fanimado 60s infinite;
+}
+.contenedor{
+
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+p{
+    color: wheat;
+    font-size: 80px;
+    padding: 5%;
+    font-family: ARIAL BLACK;
+
+}
+
+button{
+    font-size: xx-large;
+    padding: 0.75em;
+    padding: 15px 30px;
+    font-size: 2rem;
+    font-family:  'Honk', system-ui; 
+    background-color: rgba(17, 0, 255, 0.3);
+    border: 2px solid rgb(255, 255, 255) ;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    
+    
+
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+#heartBtn{
+    transform: translate(60%,0);
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fanimado{
+    0%{
+        background-image: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
